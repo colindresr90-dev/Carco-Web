@@ -21,8 +21,23 @@ export default async function ReservePage({ searchParams }: { searchParams: Prom
     .eq('id', vehicleId)
     .single();
 
-  if (error || !vehicle) {
-    notFound();
+  if (error) {
+    return (
+      <div className="min-h-screen bg-[#fcfaf8] flex flex-col items-center justify-center text-[#1A1714]">
+        <h1 className="text-2xl font-bold mb-4">Error al cargar el vehículo</h1>
+        <p className="text-[#A68966]">{error.message}</p>
+        <p className="text-sm text-gray-400 mt-4">ID: {vehicleId}</p>
+      </div>
+    );
+  }
+
+  if (!vehicle) {
+    return (
+      <div className="min-h-screen bg-[#fcfaf8] flex flex-col items-center justify-center text-[#1A1714]">
+        <h1 className="text-2xl font-bold mb-4">Vehículo no encontrado</h1>
+        <p className="text-[#A68966]">No se pudo encontrar el vehículo con ID: {vehicleId}</p>
+      </div>
+    );
   }
 
   return (
