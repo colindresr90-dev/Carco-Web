@@ -31,7 +31,7 @@ export const sendReservationConfirmedEmail = async (props: SendReservationEmailP
         );
 
         const { data, error } = await resend.emails.send({
-            from: 'CarCo <onboarding@resend.dev>',
+            from: 'CarCo <info@taskmasters.site>',
             to: [props.to],
             subject: 'Su Reserva Está Confirmada — CarCo',
             html,
