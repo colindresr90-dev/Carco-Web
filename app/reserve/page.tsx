@@ -4,7 +4,7 @@ import { Navbar } from '@/components/ui/navbar';
 import { Footer } from '@/components/ui/footer';
 import { Info } from 'lucide-react';
 import { ReserveForm } from '@/components/ui/ReserveForm';
-import { supabase } from '@/lib/supabase';
+import { createClient } from '@/lib/supabase/server';
 import { notFound } from 'next/navigation';
 
 export default async function ReservePage({ searchParams }: { searchParams: Promise<{ vehicle_id?: string }> }) {
@@ -15,6 +15,7 @@ export default async function ReservePage({ searchParams }: { searchParams: Prom
     return <div className="min-h-screen bg-[#fcfaf8] flex items-center justify-center text-[#A68966]">No se proporcionó un ID de vehículo.</div>;
   }
 
+  const supabase = createClient();
   const { data: vehicle, error } = await supabase
     .from('vehicles')
     .select('*')
