@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CarCo - Concierge &amp; Contact</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ecb613",
+                        "background-light": "#fcfbf8", // Warm ivory
+                        "background-dark": "#1b180d",
+                        "text-main": "#1b180d",
+                        "text-muted": "#5c5645",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'noise': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fcfbf8;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #dcd9ce;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c0bcae;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light text-text-main antialiased selection:bg-primary/30">
+<!-- Navbar -->
+<div class="relative flex w-full flex-col bg-background-light group/design-root">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3f0e7] bg-background-light/95 backdrop-blur-sm px-6 py-4 md:px-10 lg:px-40">
+<div class="flex items-center gap-4 text-[#1b180d]">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-3xl">directions_car_filled</span>
+</div>
+<h2 class="text-[#1b180d] text-2xl font-bold leading-tight tracking-[-0.02em]">CarCo</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<nav class="flex items-center gap-9">
+<a class="text-[#1b180d] text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Fleet</a>
+<a class="text-[#1b180d] text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-[#1b180d] text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Journal</a>
+<a class="text-[#1b180d] text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex gap-3">
+<button class="flex h-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-[#f3f0e7] px-5 text-[#1b180d] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#e8e4d8] transition-colors">
+<span class="truncate">Login</span>
+</button>
+<button class="flex h-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-[#1b180d] text-sm font-bold leading-normal tracking-[0.015em] shadow-sm hover:bg-[#d9a711] transition-colors">
+<span class="truncate">Reserve</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden p-2 text-[#1b180d]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<!-- Main Content Area -->
+<main class="flex flex-col min-h-screen">
+<!-- Hero Header -->
+<section class="relative px-6 py-12 md:px-10 lg:px-40 lg:py-20 bg-noise">
+<div class="max-w-[1200px] mx-auto text-center md:text-left">
+<h1 class="text-[#1b180d] text-5xl md:text-7xl font-black italic tracking-[-0.02em] mb-4">
+                        Liaison <span class="text-primary font-normal">&amp;</span> Support
+                    </h1>
+<p class="text-[#5c5645] text-lg md:text-xl font-normal font-sans max-w-2xl leading-relaxed">
+                        Our concierge is at your disposal for reservations, fleet inquiries, and bespoke requests. Experience the seamless luxury of CarCo.
+                    </p>
+</div>
+</section>
+<!-- Content Split -->
+<section class="px-6 pb-20 md:px-10 lg:px-40">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+<!-- Left Column: Contact Info -->
+<div class="lg:col-span-5 flex flex-col gap-10">
+<!-- Image Block -->
+<div class="w-full h-64 lg:h-80 overflow-hidden rounded-xl relative shadow-md group">
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500 z-10"></div>
+<img alt="Close up of classic car interior leather stitching" class="w-full h-full object-cover grayscale contrast-125 sepia-[0.2] transition-transform duration-700 group-hover:scale-105" data-alt="Classic car leather interior detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAei-j_OMmnygStQAehfRbzO9uH8-RdbqhkzMJW-Uti5coqyP7bzksIgOP_9WbW7OaXhsE120xo1ipbl3vYUyJ12uPn9KECqMR2j5RLFX96TiMtSKedel7_qJmzOaL1wsH6r5vV_HlFP-FzhqZ27v9TF85N_sDjo75bLaG0EDu7MufUPtTInDimVLGkvmbKYLD0m2G5wlOf2AzfPSFKjlok57g9KHmpTWhVbDY2tMaN72Z4C8bQLuYb-5zUkwnSlWCvRnWFcSEP7No"/>
+</div>
+<!-- Direct Inquiries -->
+<div>
+<h2 class="text-2xl font-bold text-[#1b180d] mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">apartment</span>
+                                Direct Inquiries
+                            </h2>
+<div class="flex flex-col gap-8 border-l-2 border-[#f3f0e7] pl-6">
+<!-- Location 1 -->
+<div class="group">
+<h3 class="text-lg font-bold text-[#1b180d] mb-1 group-hover:text-primary transition-colors">San Benito Headquarters</h3>
+<p class="text-[#5c5645] font-sans text-sm leading-relaxed mb-2">
+                                        1200 Blvd del Hipódromo,<br/>
+                                        San Benito, San Salvador
+                                    </p>
+<a class="inline-flex items-center gap-1 text-sm font-medium text-[#1b180d] hover:text-primary border-b border-primary/30 hover:border-primary pb-0.5 transition-colors" href="#">
+                                        View on Map <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+<!-- Location 2 -->
+<div class="group">
+<h3 class="text-lg font-bold text-[#1b180d] mb-1 group-hover:text-primary transition-colors">La Libertad Outpost</h3>
+<p class="text-[#5c5645] font-sans text-sm leading-relaxed mb-2">
+                                        Km 42, Carretera del Litoral,<br/>
+                                        La Libertad, El Salvador
+                                    </p>
+<a class="inline-flex items-center gap-1 text-sm font-medium text-[#1b180d] hover:text-primary border-b border-primary/30 hover:border-primary pb-0.5 transition-colors" href="#">
+                                        View on Map <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Support Contacts -->
+<div>
+<h2 class="text-2xl font-bold text-[#1b180d] mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">support_agent</span>
+                                Assistance
+                            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-white p-5 rounded-lg border border-[#f3f0e7] shadow-sm hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-3 mb-2">
+<div class="size-8 rounded-full bg-[#fcfbf8] flex items-center justify-center text-primary border border-[#f3f0e7]">
+<span class="material-symbols-outlined text-sm">call</span>
+</div>
+<span class="text-xs font-bold uppercase tracking-wider text-[#9a864c]">Priority Line</span>
+</div>
+<p class="text-lg font-bold text-[#1b180d]">+503 2211-3344</p>
+<p class="text-xs text-[#5c5645] mt-1">Mon-Sun, 24 Hours</p>
+</div>
+<div class="bg-white p-5 rounded-lg border border-[#f3f0e7] shadow-sm hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-3 mb-2">
+<div class="size-8 rounded-full bg-[#fcfbf8] flex items-center justify-center text-primary border border-[#f3f0e7]">
+<span class="material-symbols-outlined text-sm">mail</span>
+</div>
+<span class="text-xs font-bold uppercase tracking-wider text-[#9a864c]">Concierge</span>
+</div>
+<p class="text-lg font-bold text-[#1b180d]">desk@carco.com</p>
+<p class="text-xs text-[#5c5645] mt-1">Typical reply: &lt; 2 hrs</p>
+</div>
+</div>
+<div class="mt-6 flex items-center gap-3 text-[#5c5645] bg-[#f3f0e7]/50 p-3 rounded-lg">
+<span class="material-symbols-outlined text-primary">translate</span>
+<p class="text-sm font-medium">Dedicated Bilingual Support (English / Spanish)</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Form -->
+<div class="lg:col-span-7">
+<div class="bg-white p-8 md:p-12 rounded-2xl shadow-[0_2px_40px_-12px_rgba(0,0,0,0.05)] border border-[#f3f0e7] relative overflow-hidden">
+<!-- Decor element -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-8 -mt-8 pointer-events-none"></div>
+<h2 class="text-3xl font-bold text-[#1b180d] mb-2 italic">Concierge Request</h2>
+<p class="text-[#5c5645] font-sans mb-10">Please fill out the form below. Our team will coordinate your request immediately.</p>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Name -->
+<div class="group relative z-0 w-full mb-2">
+<input class="block py-2.5 px-0 w-full text-lg text-[#1b180d] bg-transparent border-0 border-b border-[#dcd9ce] appearance-none focus:outline-none focus:ring-0 focus:border-primary peer" id="name" name="name" placeholder=" " required="" type="text"/>
+<label class="peer-focus:font-medium absolute text-sm text-[#9a864c] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-display italic" for="name">Full Name</label>
+</div>
+<!-- Email -->
+<div class="group relative z-0 w-full mb-2">
+<input class="block py-2.5 px-0 w-full text-lg text-[#1b180d] bg-transparent border-0 border-b border-[#dcd9ce] appearance-none focus:outline-none focus:ring-0 focus:border-primary peer" id="email" name="email" placeholder=" " required="" type="email"/>
+<label class="peer-focus:font-medium absolute text-sm text-[#9a864c] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-display italic" for="email">Email Address</label>
+</div>
+</div>
+<!-- Subject Dropdown -->
+<div class="group relative z-0 w-full mb-2">
+<select class="block py-2.5 px-0 w-full text-lg text-[#1b180d] bg-transparent border-0 border-b border-[#dcd9ce] appearance-none focus:outline-none focus:ring-0 focus:border-primary peer" id="subject">
+<option selected="">General Inquiry</option>
+<option value="reservation">New Reservation Request</option>
+<option value="fleet">Fleet Availability</option>
+<option value="chauffeur">Chauffeur Services</option>
+<option value="event">Corporate Event</option>
+</select>
+<label class="peer-focus:font-medium absolute text-sm text-[#9a864c] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-display italic" for="subject">Subject</label>
+<span class="material-symbols-outlined absolute right-0 top-3 text-[#9a864c] pointer-events-none text-xl">expand_more</span>
+</div>
+<!-- Message -->
+<div class="group relative z-0 w-full mb-2">
+<textarea class="block py-2.5 px-0 w-full text-lg text-[#1b180d] bg-transparent border-0 border-b border-[#dcd9ce] appearance-none focus:outline-none focus:ring-0 focus:border-primary peer resize-none" id="message" name="message" placeholder=" " required="" rows="4"></textarea>
+<label class="peer-focus:font-medium absolute text-sm text-[#9a864c] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 font-display italic" for="message">How can we assist you?</label>
+</div>
+<!-- Actions -->
+<div class="flex items-center justify-between pt-6">
+<div class="flex items-center gap-2">
+<input class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-primary focus:ring-2" id="newsletter" type="checkbox"/>
+<label class="ml-2 text-sm font-medium text-[#5c5645] font-sans" for="newsletter">Subscribe to our journal.</label>
+</div>
+<button class="group relative flex items-center justify-center gap-2 px-8 py-3 bg-[#1b180d] text-white rounded-lg overflow-hidden transition-all hover:bg-primary hover:text-[#1b180d] shadow-lg hover:shadow-primary/30" type="button">
+<span class="relative font-bold tracking-wide text-sm z-10">SEND INQUIRY</span>
+<span class="material-symbols-outlined relative z-10 text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Trust Indicators -->
+<div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined">security</span>
+<span class="text-xs font-sans font-bold tracking-widest text-[#5c5645]">SECURE TRANSMISSION</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined">verified</span>
+<span class="text-xs font-sans font-bold tracking-widest text-[#5c5645]">OFFICIAL CONCIERGE</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Simple -->
+<footer class="border-t border-[#f3f0e7] bg-white py-10 px-6 md:px-10 lg:px-40">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-[#5c5645] text-sm font-sans">© 2024 CarCo Luxury Rentals. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-[#1b180d] text-sm font-medium hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#1b180d] text-sm font-medium hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="text-[#1b180d] text-sm font-medium hover:text-primary transition-colors" href="#">Careers</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
