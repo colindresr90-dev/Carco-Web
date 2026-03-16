@@ -1,14 +1,26 @@
 'use client';
 
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/nextjs';
 
 export function Navbar({ solid = false }: { solid?: boolean }) {
   const [isScrolled, setIsScrolled] = useState(solid);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { user } = useUser();
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
 
   useEffect(() => {
     if (solid) return; // always solid, no listener needed
@@ -121,12 +133,47 @@ export function Navbar({ solid = false }: { solid?: boolean }) {
             <button className={`${isScrolled ? 'text-[#1A1714]' : 'text-white'} hover:text-[#e6a219] font-medium text-sm hidden sm:block`}>
               ES | EN
             </button>
-            <button className={`md:hidden ${isScrolled ? 'text-[#1A1714]' : 'text-white'}`}>
-              <Menu className="w-6 h-6" />
+            <button 
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className={`md:hidden z-50 transition-colors ${isMobileMenuOpen ? 'text-[#1A1714]' : isScrolled ? 'text-[#1A1714]' : 'text-white'}`}
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      <div 
+        className={`fixed inset-0 bg-[#fcfaf8] z-40 flex flex-col pt-24 px-6 pb-8 transition-transform duration-300 md:hidden overflow-y-auto ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+      >
+        <nav className="flex flex-col gap-6 mt-8">
+            <Link onClick={() => setIsMobileMenuOpen(false)} href="/" className="text-[#1A1714] text-2xl font-serif italic border-b border-[#E8E1D9] pb-4">Inicio</Link>
+            <Link onClick={() => setIsMobileMenuOpen(false)} href="/fleet" className="text-[#1A1714] text-2xl font-serif italic border-b border-[#E8E1D9] pb-4">Flota</Link>
+            <Link onClick={() => setIsMobileMenuOpen(false)} href="/destinations" className="text-[#1A1714] text-2xl font-serif italic border-b border-[#E8E1D9] pb-4">Destinos</Link>
+            <Link onClick={() => setIsMobileMenuOpen(false)} href="/about" className="text-[#1A1714] text-2xl font-serif italic border-b border-[#E8E1D9] pb-4">Nosotros</Link>
+            <Link onClick={() => setIsMobileMenuOpen(false)} href="/soporte" className="text-[#1A1714] text-2xl font-serif italic border-b border-[#E8E1D9] pb-4">Soporte</Link>
+        </nav>
+        
+        <div className="mt-auto pt-10 pb-6 flex flex-col gap-6">
+            <SignedOut>
+                <Link onClick={() => setIsMobileMenuOpen(false)} href="/login" className="flex items-center justify-center px-6 py-4 border border-[#A68966] text-[#A68966] rounded-full text-sm font-bold tracking-wide uppercase hover:bg-[#A68966] hover:text-white transition-colors">
+                    Iniciar Sesión
+                </Link>
+            </SignedOut>
+            <SignedIn>
+                 <div className="flex items-center justify-between p-4 bg-white border border-[#E8E1D9] rounded-xl shadow-sm">
+                    <div className="flex items-center gap-3">
+                         <UserButton appearance={{ elements: { userButtonAvatarBox: "w-10 h-10 border-2 border-white/20 hover:border-[#e6a219] transition-colors" } }} />
+                         <span className="text-sm uppercase font-sans tracking-widest font-medium text-[#1A1714] truncate max-w-[120px]">
+                            {user?.firstName || 'Perfil'}
+                        </span>
+                    </div>
+                 </div>
+            </SignedIn>
+        </div>
+      </div>
+
     </header>
   );
 }
