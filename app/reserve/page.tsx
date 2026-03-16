@@ -71,7 +71,7 @@ export default async function ReservePage({ searchParams }: { searchParams: Prom
         <div className="px-6 md:px-12 max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
           {/* Left Column: Interactive Form */}
           <div className="flex-grow">
-            <ReserveForm vehicleId={vehicle.id} vehicleName={`${vehicle.brand} ${vehicle.model}`} pricePerDay={vehicle.price_per_day} />
+            <ReserveForm vehicleId={vehicle.id} vehicleSlug={vehicle.slug} vehicleName={`${vehicle.brand} ${vehicle.model}`} pricePerDay={vehicle.price_per_day} />
           </div>
 
           {/* Right Column: Summary (static — server-rendered) */}

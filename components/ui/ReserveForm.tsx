@@ -11,6 +11,7 @@ import 'react-day-picker/dist/style.css';
 
 interface ReserveFormProps {
     vehicleId: string;
+    vehicleSlug: string;
     vehicleName?: string;
     pricePerDay: number;
 }
@@ -21,7 +22,7 @@ function differenceInDays(from: Date, to: Date): number {
 
 type ReservedRange = { pickup_date: string; return_date: string };
 
-export function ReserveForm({ vehicleId, vehicleName, pricePerDay }: ReserveFormProps) {
+export function ReserveForm({ vehicleId, vehicleSlug, vehicleName, pricePerDay }: ReserveFormProps) {
     const { isSignedIn } = useUser();
     const today = startOfToday();
 
@@ -88,7 +89,7 @@ export function ReserveForm({ vehicleId, vehicleName, pricePerDay }: ReserveForm
         setToast(null);
 
         const payload = {
-            vehicle_id: vehicleId,
+            vehicle_id: vehicleSlug,
             vehicle_name: vehicleName,
             pickup_date: format(pickupDate, 'yyyy-MM-dd'),
             return_date: format(returnDate, 'yyyy-MM-dd'),
