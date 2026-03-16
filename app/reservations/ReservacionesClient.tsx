@@ -263,7 +263,7 @@ export function ReservacionesClient({ reservations, vehiclesMap = [] }: { reserv
             ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filtered.map((reservation) => {
-                        const vehicle = vehiclesMap.find(v => v.id === reservation.vehicle_id);
+                        const vehicle = vehiclesMap.find(v => v.slug === reservation.vehicle_id);
                         return (
                             <ReservationCard
                                 key={reservation.id}
@@ -279,7 +279,7 @@ export function ReservacionesClient({ reservations, vehiclesMap = [] }: { reserv
             {/* ── Drawer ── */}
             <ReservacionDrawer
                 reservation={selectedReservation}
-                vehicle={selectedReservation ? vehiclesMap.find(v => v.id === selectedReservation.vehicle_id) : null}
+                vehicle={selectedReservation ? vehiclesMap.find(v => v.slug === selectedReservation.vehicle_id) : null}
                 onClose={() => setSelectedReservation(null)}
             />
         </>

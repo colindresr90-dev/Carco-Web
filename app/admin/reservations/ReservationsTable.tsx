@@ -363,7 +363,7 @@ export function ReservationsTable({ initialData, vehiclesMap }: { initialData: R
             {/* ── Drawers ── */}
             <ReservationDrawer
                 reservation={selectedReservation}
-                vehicle={selectedReservation ? vehiclesMap.find(v => v.id === selectedReservation.vehicle_id) : null}
+                vehicle={selectedReservation ? vehiclesMap.find(v => v.slug === selectedReservation.vehicle_id) : null}
                 onClose={() => setSelectedReservation(null)}
                 onStatusChange={handleDrawerStatusChange}
             />

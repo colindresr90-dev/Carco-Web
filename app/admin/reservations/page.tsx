@@ -65,8 +65,8 @@ export default async function AdminReservationsPage() {
     if (vehicleIds.length > 0) {
         const { data: vData } = await supabase
             .from('vehicles')
-            .select('id, brand, model, hero_image, year, category, transmission')
-            .in('id', vehicleIds);
+            .select('id, slug, brand, model, hero_image, year, category, transmission')
+            .in('slug', vehicleIds);
         vehiclesMap = vData || [];
     }
 

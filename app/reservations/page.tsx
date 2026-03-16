@@ -38,8 +38,8 @@ export default async function MisReservasPage() {
         const vehicleIds = [...new Set(data.map(r => r.vehicle_id))];
         const { data: vData } = await supabase
             .from('vehicles')
-            .select('id, brand, model, hero_image, year, category, transmission, engine')
-            .in('id', vehicleIds);
+            .select('id, slug, brand, model, hero_image, year, category, transmission, engine')
+            .in('slug', vehicleIds);
         referencedVehicles = vData || [];
     }
 
