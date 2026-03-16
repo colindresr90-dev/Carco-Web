@@ -135,7 +135,7 @@ export function Navbar({ solid = false }: { solid?: boolean }) {
             </button>
             <button 
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`md:hidden z-50 transition-colors ${isMobileMenuOpen ? 'text-[#1A1714]' : isScrolled ? 'text-[#1A1714]' : 'text-white'}`}
+                className={`md:hidden z-50 transition-colors ${isMobileMenuOpen ? 'text-[#e6a219]' : isScrolled ? 'text-[#1A1714]' : 'text-white'}`}
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -143,19 +143,19 @@ export function Navbar({ solid = false }: { solid?: boolean }) {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Dropdown */}
       <div 
-        className={`fixed inset-0 bg-[#fcfaf8] z-40 flex flex-col pt-24 px-6 pb-8 transition-transform duration-300 md:hidden overflow-y-auto ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`absolute top-full left-0 w-full bg-[#fcfaf8] border-b border-[#E8E1D9] shadow-xl z-40 flex flex-col px-6 pb-8 transition-all duration-300 origin-top overflow-hidden md:hidden ${isMobileMenuOpen ? 'opacity-100 max-h-[1000px] py-6' : 'opacity-0 max-h-0 py-0 pointer-events-none'}`}
       >
-        <nav className="flex flex-col gap-6 mt-8">
-            <Link onClick={() => setIsMobileMenuOpen(false)} href="/" className="text-[#1A1714] text-2xl font-serif italic border-b border-[#E8E1D9] pb-4">Inicio</Link>
-            <Link onClick={() => setIsMobileMenuOpen(false)} href="/fleet" className="text-[#1A1714] text-2xl font-serif italic border-b border-[#E8E1D9] pb-4">Flota</Link>
-            <Link onClick={() => setIsMobileMenuOpen(false)} href="/destinations" className="text-[#1A1714] text-2xl font-serif italic border-b border-[#E8E1D9] pb-4">Destinos</Link>
-            <Link onClick={() => setIsMobileMenuOpen(false)} href="/about" className="text-[#1A1714] text-2xl font-serif italic border-b border-[#E8E1D9] pb-4">Nosotros</Link>
-            <Link onClick={() => setIsMobileMenuOpen(false)} href="/soporte" className="text-[#1A1714] text-2xl font-serif italic border-b border-[#E8E1D9] pb-4">Soporte</Link>
+        <nav className="flex flex-col gap-4 mt-2">
+            <Link onClick={() => setIsMobileMenuOpen(false)} href="/" className="text-[#1A1714] text-xl font-serif italic border-b border-[#E8E1D9] pb-3">Inicio</Link>
+            <Link onClick={() => setIsMobileMenuOpen(false)} href="/fleet" className="text-[#1A1714] text-xl font-serif italic border-b border-[#E8E1D9] pb-3">Flota</Link>
+            <Link onClick={() => setIsMobileMenuOpen(false)} href="/destinations" className="text-[#1A1714] text-xl font-serif italic border-b border-[#E8E1D9] pb-3">Destinos</Link>
+            <Link onClick={() => setIsMobileMenuOpen(false)} href="/about" className="text-[#1A1714] text-xl font-serif italic border-b border-[#E8E1D9] pb-3">Nosotros</Link>
+            <Link onClick={() => setIsMobileMenuOpen(false)} href="/soporte" className="text-[#1A1714] text-xl font-serif italic border-b border-[#E8E1D9] pb-3">Soporte</Link>
         </nav>
         
-        <div className="mt-auto pt-10 pb-6 flex flex-col gap-6">
+        <div className="mt-8 flex flex-col gap-4">
             <SignedOut>
                 <Link onClick={() => setIsMobileMenuOpen(false)} href="/login" className="flex items-center justify-center px-6 py-4 border border-[#A68966] text-[#A68966] rounded-full text-sm font-bold tracking-wide uppercase hover:bg-[#A68966] hover:text-white transition-colors">
                     Iniciar Sesión
