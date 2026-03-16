@@ -39,11 +39,11 @@ export function ReserveForm({ vehicleId, vehicleSlug, vehicleName, pricePerDay }
     useEffect(() => {
         setUnavailableRanges([]);
         setRange(undefined); // Reset range when vehicle changes
-        if (!vehicleId) return;
+        if (!vehicleSlug) return;
 
         async function fetchDates() {
             try {
-                const res = await fetch(`/api/vehicle-unavailable-dates?vehicle_id=${vehicleId}`);
+                const res = await fetch(`/api/vehicle-unavailable-dates?vehicle_id=${vehicleSlug}`);
                 if (res.ok) {
                     const data = await res.json();
                     setUnavailableRanges(Array.isArray(data) ? data : []);
@@ -53,7 +53,7 @@ export function ReserveForm({ vehicleId, vehicleSlug, vehicleName, pricePerDay }
             }
         }
         fetchDates();
-    }, [vehicleId]);
+    }, [vehicleSlug]);
 
     // Close calendar on click outside
     useEffect(() => {
