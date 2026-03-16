@@ -104,7 +104,7 @@ export default async function Home() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100">
+                    <div className="hidden md:flex absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 items-center justify-center gap-3 opacity-0 group-hover:opacity-100">
                       <Link
                         href={`/reserve?vehicle_id=${car.id}`}
                         className="bg-[#e6a219] text-[#1A1714] px-5 py-2 rounded-full font-bold text-xs uppercase tracking-wider shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-white"
@@ -119,12 +119,28 @@ export default async function Home() {
                       </Link>
                     </div>
                   </div>
-                  <div className="flex flex-col gap-1 px-2">
+                  <div className="flex flex-col gap-2 px-2">
                     <div className="flex justify-between items-baseline">
                       <h3 className="text-2xl text-[#1A1714] font-serif">{car.brand} {car.model}</h3>
                       <span className="text-[#e6a219] font-bold text-lg">${car.price_per_day}<span className="text-sm font-normal text-[#A68966]/80">/día</span></span>
                     </div>
                     <p className="text-[#A68966] text-sm font-medium tracking-wide uppercase">{car.category} • {car.transmission}</p>
+                    
+                    {/* Mobile Only Buttons */}
+                    <div className="flex gap-3 mt-3 md:hidden">
+                      <Link
+                        href={`/reserve?vehicle_id=${car.id}`}
+                        className="flex-1 bg-[#e6a219] text-[#1A1714] py-3 rounded-lg text-center font-bold text-xs uppercase tracking-wider shadow-sm"
+                      >
+                        Reservar
+                      </Link>
+                      <Link
+                        href={`/vehicles/${car.slug}`}
+                        className="flex-1 bg-[#fcfaf8] border border-[#A68966]/30 text-[#1A1714] py-3 rounded-lg text-center font-bold text-xs uppercase tracking-wider shadow-sm"
+                      >
+                        Detalles
+                      </Link>
+                    </div>
                   </div>
                 </div>
               ))}
