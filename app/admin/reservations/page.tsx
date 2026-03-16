@@ -1,6 +1,6 @@
 import { auth, currentUser } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
-import { supabase } from '@/lib/supabase';
+import { createClient } from '@/lib/supabase/server';
 import { ReservationsTable } from './ReservationsTable';
 
 export default async function AdminReservationsPage() {
@@ -35,6 +35,8 @@ export default async function AdminReservationsPage() {
             </div>
         );
     }
+
+    const supabase = createClient();
 
     // 3. Fetch all reservations
     const { data: reservations, error } = await supabase

@@ -1,6 +1,6 @@
 import { auth } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
-import { supabase } from '@/lib/supabase';
+import { createClient } from '@/lib/supabase/server';
 import { Navbar } from '@/components/ui/navbar';
 import { ReservacionesClient } from './ReservacionesClient';
 import type { UserReservation } from './ReservacionDrawer';
@@ -16,6 +16,8 @@ export default async function MisReservasPage() {
     if (!userId) {
         redirect('/login');
     }
+
+    const supabase = createClient();
 
     // 2. Fetch reservations for this user only
     const { data: reservations, error } = await supabase
