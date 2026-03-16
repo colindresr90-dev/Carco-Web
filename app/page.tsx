@@ -45,44 +45,44 @@ export default async function Home() {
             />
           </div>
 
-          <div className="relative z-20 container mx-auto px-6 text-center text-white flex flex-col items-center gap-8">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight leading-tight max-w-4xl drop-shadow-lg font-serif">
-              Conduce El Salvador <br /><span className="italic text-[#e6a219]">con Distinción</span>
+          <div className="relative z-20 container mx-auto px-4 md:px-6 pt-24 md:pt-0 text-center text-white flex flex-col items-center gap-6 md:gap-8">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight leading-tight max-w-4xl drop-shadow-lg font-serif px-2">
+              Conduce El Salvador <br className="hidden sm:block" /><span className="italic text-[#e6a219]">con Distinción</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/90 font-light max-w-xl tracking-wide">
+            <p className="text-base sm:text-lg md:text-xl text-white/90 font-light max-w-xl tracking-wide px-4">
               Presencia que domina ciudad y montaña.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mt-4">
-              <Link href="/fleet" className="min-w-[160px] h-14 px-8 bg-[#e6a219] hover:bg-[#e6a219]/90 text-[#1A1714] text-base font-bold uppercase tracking-wider rounded-lg transition-all duration-300 shadow-lg hover:shadow-[#e6a219]/50 flex items-center justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-2 sm:mt-4 w-full sm:w-auto px-6 sm:px-0">
+              <Link href="/fleet" className="w-full sm:w-auto sm:min-w-[160px] h-12 sm:h-14 px-6 sm:px-8 bg-[#e6a219] hover:bg-[#e6a219]/90 text-[#1A1714] text-sm sm:text-base font-bold uppercase tracking-wider rounded-lg transition-all duration-300 shadow-lg hover:shadow-[#e6a219]/50 flex items-center justify-center">
                 Reservar Ahora
               </Link>
-              <Link href="/destinos" className="min-w-[160px] h-14 px-8 bg-transparent border border-white/40 text-white/90 hover:bg-white hover:text-[#1A1714] text-base font-bold uppercase tracking-wider rounded-lg transition-all duration-300 backdrop-blur-sm flex items-center justify-center">
+              <Link href="/destinos" className="w-full sm:w-auto sm:min-w-[160px] h-12 sm:h-14 px-6 sm:px-8 bg-transparent border border-white/40 text-white/90 hover:bg-white hover:text-[#1A1714] text-sm sm:text-base font-bold uppercase tracking-wider rounded-lg transition-all duration-300 backdrop-blur-sm flex items-center justify-center">
                 Explorar Destinos
               </Link>
             </div>
 
-            <div className="mt-12 grid grid-cols-3 gap-8 md:gap-16 opacity-80 border-t border-white/20 pt-8">
-              <div className="flex flex-col items-center gap-2">
-                <Shield className="w-6 h-6" />
-                <span className="text-xs tracking-widest uppercase">Seguro Premium</span>
+            <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-16 opacity-80 border-t border-white/20 pt-8 w-full">
+              <div className="flex flex-row sm:flex-col items-center justify-center gap-3 sm:gap-2">
+                <Shield className="w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-[10px] sm:text-xs tracking-widest uppercase">Seguro Premium</span>
               </div>
-              <div className="flex flex-col items-center gap-2">
-                <Clock className="w-6 h-6" />
-                <span className="text-xs tracking-widest uppercase">Concierge 24/7</span>
+              <div className="flex flex-row sm:flex-col items-center justify-center gap-3 sm:gap-2">
+                <Clock className="w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-[10px] sm:text-xs tracking-widest uppercase">Concierge 24/7</span>
               </div>
-              <div className="flex flex-col items-center gap-2">
-                <Gem className="w-6 h-6" />
-                <span className="text-xs tracking-widest uppercase">Flota Selecta</span>
+              <div className="flex flex-row sm:flex-col items-center justify-center gap-3 sm:gap-2">
+                <Gem className="w-5 h-5 sm:w-6 sm:h-6" />
+                <span className="text-[10px] sm:text-xs tracking-widest uppercase">Flota Selecta</span>
               </div>
             </div>
           </div>
         </section>
 
         {/* Fleet Preview Section */}
-        <section id="fleet" className="py-32 md:py-40 px-6 md:px-12 max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <section id="fleet" className="py-20 md:py-40 px-4 sm:px-6 md:px-12 max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-6">
             <div>
-              <h2 className="text-4xl md:text-5xl text-[#1A1714] mb-4 font-serif">Nuestra Flota</h2>
+              <h2 className="text-3xl md:text-5xl text-[#1A1714] mb-4 font-serif">Nuestra Flota</h2>
               <p className="text-[#A68966] max-w-md font-light">Una colección curada de vehículos que combinan elegancia, eficiencia y presencia. Cada modelo ha sido seleccionado para adaptarse al ritmo de San Salvador, a la serenidad de la costa y a la aventura de nuestros paisajes naturales.</p>
             </div>
             <Link href="/fleet" className="group flex items-center gap-2 text-[#1A1714] font-medium border-b border-[#A68966]/50 pb-1 hover:border-[#e6a219] transition-colors">
@@ -139,11 +139,11 @@ export default async function Home() {
         </section>
 
         {/* Membership Section */}
-        <section id="membership" className="bg-[#1A1714] text-[#fcfaf8] py-24 relative overflow-hidden">
+        <section id="membership" className="bg-[#1A1714] text-[#fcfaf8] py-20 md:py-24 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-          <div className="container mx-auto px-6 md:px-12 max-w-7xl relative z-10">
-            <div className="flex flex-col lg:flex-row gap-16 items-center">
-              <div className="flex-1 space-y-8">
+          <div className="container mx-auto px-4 sm:px-6 md:px-12 max-w-7xl relative z-10">
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+              <div className="flex-1 space-y-6 md:space-y-8 text-center lg:text-left">
                 <div className="inline-flex items-center gap-2 text-[#e6a219]/80 border border-[#e6a219]/30 px-4 py-1 rounded-full text-xs uppercase tracking-widest">
                   <Gem className="w-4 h-4" /> Acceso Exclusivo
                 </div>
@@ -181,8 +181,8 @@ export default async function Home() {
         </section>
 
         {/* Destinations Header Add-On */}
-        <section className="bg-[#1A1714] text-center pt-24 pb-16 px-6 relative">
-          <h2 className="text-4xl md:text-5xl text-white font-serif mb-6">Destinos que Definen el Viaje</h2>
+        <section className="bg-[#1A1714] text-center pt-20 md:pt-24 pb-12 md:pb-16 px-4 sm:px-6 relative">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-white font-serif mb-4 md:mb-6 leading-tight">Destinos que Definen el Viaje</h2>
           <p className="text-[#A68966] text-lg max-w-2xl mx-auto font-light leading-relaxed">
             El Salvador es contraste y carácter. Ciudad y océano. Modernidad y naturaleza. Nuestra experiencia está diseñada para acompañarte en cada escenario.
           </p>
@@ -200,12 +200,12 @@ export default async function Home() {
               className="object-cover object-center transition-transform duration-[10s] group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors duration-500"></div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 z-10">
-              <h3 className="text-4xl md:text-5xl text-white font-serif mb-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">San Benito y Santa Elena</h3>
-              <p className="text-white/80 max-w-xs font-light translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 sm:p-8 z-10">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl text-white font-serif mb-3 md:mb-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">San Benito y Santa Elena</h3>
+              <p className="text-white/80 max-w-xs font-light translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100 text-sm md:text-base">
                 El corazón contemporáneo de San Salvador. Arquitectura, gastronomía y negocios en un entorno sofisticado.
               </p>
-              <Link href="/destinations" className="mt-8 px-6 py-2 border border-white text-white rounded-full text-sm uppercase tracking-widest hover:bg-white hover:text-[#1A1714] transition-all duration-300 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-200">
+              <Link href="/destinations" className="mt-6 md:mt-8 px-6 py-2 border border-white text-white rounded-full text-xs md:text-sm uppercase tracking-widest hover:bg-white hover:text-[#1A1714] transition-all duration-300 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-200">
                 Explorar Ruta
               </Link>
             </div>
@@ -221,12 +221,12 @@ export default async function Home() {
               className="object-cover object-center transition-transform duration-[10s] group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors duration-500"></div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 z-10">
-              <h3 className="text-4xl md:text-5xl text-white font-serif mb-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">La Libertad y El Tunco</h3>
-              <p className="text-white/80 max-w-xs font-light translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 sm:p-8 z-10">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl text-white font-serif mb-3 md:mb-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">La Libertad y El Tunco</h3>
+              <p className="text-white/80 max-w-xs font-light translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100 text-sm md:text-base">
                 Atardeceres dorados, brisa marina y una energía vibrante que conecta lujo y libertad.
               </p>
-              <Link href="/destinations" className="mt-8 px-6 py-2 border border-white text-white rounded-full text-sm uppercase tracking-widest hover:bg-white hover:text-[#1A1714] transition-all duration-300 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-200">
+              <Link href="/destinations" className="mt-6 md:mt-8 px-6 py-2 border border-white text-white rounded-full text-xs md:text-sm uppercase tracking-widest hover:bg-white hover:text-[#1A1714] transition-all duration-300 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-200">
                 Explorar Ruta
               </Link>
             </div>
@@ -242,12 +242,12 @@ export default async function Home() {
               className="object-cover object-center transition-transform duration-[10s] group-hover:scale-110 opacity-70"
             />
             <div className="absolute inset-0 bg-black/50 group-hover:bg-black/70 transition-colors duration-500 border-l border-white/10"></div>
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 z-10">
-              <h3 className="text-4xl md:text-5xl text-white font-serif mb-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">El Salvador Offroad</h3>
-              <p className="text-white/80 max-w-xs font-light translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 sm:p-8 z-10">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl text-white font-serif mb-3 md:mb-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">El Salvador Offroad</h3>
+              <p className="text-white/80 max-w-xs font-light translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100 text-sm md:text-base">
                 Rutas volcánicas, paisajes abiertos y caminos que invitan a explorar más allá de lo evidente.
               </p>
-              <Link href="/destinations" className="mt-8 px-6 py-2 border border-white text-white rounded-full text-sm uppercase tracking-widest hover:bg-white hover:text-[#1A1714] transition-all duration-300 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-200">
+              <Link href="/destinations" className="mt-6 md:mt-8 px-6 py-2 border border-white text-white rounded-full text-xs md:text-sm uppercase tracking-widest hover:bg-white hover:text-[#1A1714] transition-all duration-300 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 delay-200">
                 Explorar Ruta
               </Link>
             </div>
