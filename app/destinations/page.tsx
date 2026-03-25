@@ -177,8 +177,8 @@ export default function DestinationsPage() {
                   <div className="flex items-center gap-6">
                     <div className="w-32 h-20 bg-white rounded-xl overflow-hidden relative shadow-inner border border-[#1C1C1C]/5">
                       <Image
-                        src="/img/vehicles/hyundai-santa-fe.jpg"
-                        alt="Hyundai Santa Fe"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZG23LkUmcJiBdTvRb-6jrYxIf4-2yKmq8p5DyKcrLk3YILASpbB6XOJ5TJ4yV9YNDTaJdXsh_fDR-rmWjyYL7JbGjBbyqlqeZ9i66sQR0NDgokCxSKE0vz64fjRpg5FVgLdlz31s6ebSW6dNbsoxpyWcdnVTQVY8iecRoFqTago75d5tr64a5wY6cQoFiNa7hLRuWv8IIAQvW2NZqtBlSmuVTgfbf_ZKvg2eRgxyzYfkCWux8QOzo9q80zkzoagBdI5nu_H5-swk"
+                        alt="Toyota Prado"
                         fill
                         quality={90}
                         sizes="(max-width: 768px) 100vw, 400px"
