@@ -173,7 +173,7 @@ export default function FleetClient({ initialVehicles, renderTime }: { initialVe
                                         </div>
                                         <div className="p-6 flex flex-col gap-5">
                                             <div className="flex justify-between items-start">
-                                                <h3 className="text-2xl font-serif text-[#1A1714] group-hover:text-[#A68966] transition-colors">{car.brand} {car.model}</h3>
+                                                <h3 className="text-2xl font-serif text-[#1A1714] group-hover:text-black transition-colors">{car.brand} {car.model}</h3>
                                                 <div className="text-right">
                                                     <span className="block text-xl font-bold text-[#1A1714]">${car.price_per_day}</span>
                                                     <span className="text-[10px] text-[#A68966] uppercase tracking-[0.1em] font-medium">por día</span>
