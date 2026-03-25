@@ -55,7 +55,7 @@ export default function DestinationsPage() {
                   </p>
                 </div>
 
-                <div className="bg-[#fcfaf8] border border-[#1C1C1C]/5 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 group/card">
+                <Link href="/vehicles/hyundai-elantra" className="block bg-[#fcfaf8] border border-[#1C1C1C]/5 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 group/card">
                   <span className="text-[10px] text-[#e6a219] font-bold uppercase tracking-[0.2em] block mb-6">Vehículo Recomendado</span>
                   <div className="flex items-center gap-6">
                     <div className="w-32 h-20 bg-white rounded-xl overflow-hidden relative shadow-inner border border-[#1C1C1C]/5">
@@ -69,20 +69,17 @@ export default function DestinationsPage() {
                       />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-[#1C1C1C] font-serif text-xl font-bold">Hyundai Elantra</h4>
+                      <h4 className="text-[#1C1C1C] font-serif text-xl font-bold group-hover/card:text-[#e6a219] transition-colors">Hyundai Elantra</h4>
                       <p className="text-[#1C1C1C]/50 text-xs uppercase tracking-wider mt-1">Sedán • Automático • 5 Asientos</p>
                     </div>
-                    <Link
-                      href="/reserve?vehicle_id=hyundai-elantra"
-                      className="flex flex-col items-center gap-2 text-[#e6a219] hover:text-[#1C1C1C] transition-colors group/link"
-                    >
-                      <div className="w-12 h-12 rounded-full border border-[#e6a219]/30 flex items-center justify-center group-hover/link:bg-[#e6a219] group-hover/link:border-[#e6a219] transition-all">
-                        <ArrowRight className="w-5 h-5 group-hover/link:text-white" />
+                    <div className="flex flex-col items-center gap-2 text-[#e6a219] transition-colors group/link">
+                      <div className="w-12 h-12 rounded-full border border-[#e6a219]/30 flex items-center justify-center group-hover/card:bg-[#e6a219] group-hover/card:border-[#e6a219] transition-all">
+                        <ArrowRight className="w-5 h-5 group-hover/card:text-white" />
                       </div>
-                      <span className="text-[10px] font-bold uppercase tracking-widest">Ver Vehículo</span>
-                    </Link>
+                      <span className="text-[10px] font-bold uppercase tracking-widest group-hover/card:text-[#1A1714]">Detalles</span>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
 
@@ -117,7 +114,7 @@ export default function DestinationsPage() {
                   </p>
                 </div>
 
-                <div className="bg-[#fcfaf8] border border-[#1C1C1C]/5 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 group/card">
+                <Link href="/vehicles/kia-forte" className="block bg-[#fcfaf8] border border-[#1C1C1C]/5 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 group/card">
                   <span className="text-[10px] text-[#e6a219] font-bold uppercase tracking-[0.2em] block mb-6">Vehículo Recomendado</span>
                   <div className="flex items-center gap-6">
                     <div className="w-32 h-20 bg-white rounded-xl overflow-hidden relative shadow-inner border border-[#1C1C1C]/5">
@@ -131,20 +128,17 @@ export default function DestinationsPage() {
                       />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-[#1C1C1C] font-serif text-xl font-bold">Kia Forte</h4>
+                      <h4 className="text-[#1C1C1C] font-serif text-xl font-bold group-hover/card:text-[#e6a219] transition-colors">Kia Forte</h4>
                       <p className="text-[#1C1C1C]/50 text-xs uppercase tracking-wider mt-1">Sedán • Automático • 5 Asientos</p>
                     </div>
-                    <Link
-                      href="/reserve?vehicle_id=kia-forte"
-                      className="flex flex-col items-center gap-2 text-[#e6a219] hover:text-[#1C1C1C] transition-colors group/link"
-                    >
-                      <div className="w-12 h-12 rounded-full border border-[#e6a219]/30 flex items-center justify-center group-hover/link:bg-[#e6a219] group-hover/link:border-[#e6a219] transition-all">
-                        <ArrowRight className="w-5 h-5 group-hover/link:text-white" />
+                    <div className="flex flex-col items-center gap-2 text-[#e6a219] transition-colors group/link">
+                      <div className="w-12 h-12 rounded-full border border-[#e6a219]/30 flex items-center justify-center group-hover/card:bg-[#e6a219] group-hover/card:border-[#e6a219] transition-all">
+                        <ArrowRight className="w-5 h-5 group-hover/card:text-white" />
                       </div>
-                      <span className="text-[10px] font-bold uppercase tracking-widest">Ver Vehículo</span>
-                    </Link>
+                      <span className="text-[10px] font-bold uppercase tracking-widest group-hover/card:text-[#1A1714]">Detalles</span>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
 
@@ -178,7 +172,7 @@ export default function DestinationsPage() {
                   </p>
                 </div>
 
-                <div className="bg-[#fcfaf8] border border-[#1C1C1C]/5 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 group/card">
+                <Link href="/vehicles/toyota-prado" className="block bg-[#fcfaf8] border border-[#1C1C1C]/5 p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1 group/card">
                   <span className="text-[10px] text-[#e6a219] font-bold uppercase tracking-[0.2em] block mb-6">Vehículo Recomendado</span>
                   <div className="flex items-center gap-6">
                     <div className="w-32 h-20 bg-white rounded-xl overflow-hidden relative shadow-inner border border-[#1C1C1C]/5">
@@ -192,20 +186,17 @@ export default function DestinationsPage() {
                       />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-[#1C1C1C] font-serif text-xl font-bold">Toyota Prado</h4>
+                      <h4 className="text-[#1C1C1C] font-serif text-xl font-bold group-hover/card:text-[#e6a219] transition-colors">Toyota Prado</h4>
                       <p className="text-[#1C1C1C]/50 text-xs uppercase tracking-wider mt-1">SUV • 7 Asientos • Diésel</p>
                     </div>
-                    <Link
-                      href="/reserve?vehicle_id=toyota-prado"
-                      className="flex flex-col items-center gap-2 text-[#e6a219] hover:text-[#1C1C1C] transition-colors group/link"
-                    >
-                      <div className="w-12 h-12 rounded-full border border-[#e6a219]/30 flex items-center justify-center group-hover/link:bg-[#e6a219] group-hover/link:border-[#e6a219] transition-all">
-                        <ArrowRight className="w-5 h-5 group-hover/link:text-white" />
+                    <div className="flex flex-col items-center gap-2 text-[#e6a219] transition-colors group/link">
+                      <div className="w-12 h-12 rounded-full border border-[#e6a219]/30 flex items-center justify-center group-hover/card:bg-[#e6a219] group-hover/card:border-[#e6a219] transition-all">
+                        <ArrowRight className="w-5 h-5 group-hover/card:text-white" />
                       </div>
-                      <span className="text-[10px] font-bold uppercase tracking-widest">Ver Vehículo</span>
-                    </Link>
+                      <span className="text-[10px] font-bold uppercase tracking-widest group-hover/card:text-[#1A1714]">Detalles</span>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
 
