@@ -166,7 +166,7 @@ export default async function Home() {
                 <h2 className="text-4xl md:text-6xl font-light leading-tight">
                   Una Experiencia <br /> <span className="font-serif italic text-[#e6a219]">Pensada en el Detalle</span>
                 </h2>
-                <p className="text-lg text-[#1A1714] font-light max-w-md leading-relaxed">
+                <p className="text-lg text-white/80 font-light max-w-md leading-relaxed">
                   En CarCo entendemos que la movilidad es una extensión del estilo personal. Por eso ofrecemos procesos ágiles, atención precisa y vehículos en condiciones impecables. Cada reserva es el inicio de una experiencia diseñada para quienes valoran la excelencia.
                 </p>
                 <Link href="/about" className="inline-flex items-center gap-3 text-white border-b border-[#e6a219] pb-1 hover:text-[#e6a219] transition-colors uppercase tracking-widest text-sm font-bold mt-4">
@@ -179,17 +179,17 @@ export default async function Home() {
                 <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-[#e6a219]/50 transition-colors duration-300">
                   <Shield className="text-[#e6a219] w-10 h-10 mb-4" />
                   <h3 className="text-xl font-serif mb-2">Discreción</h3>
-                  <p className="text-[#1A1714] text-sm leading-relaxed">Privacidad absoluta y procesos ágiles asegurando que su experiencia sea impecable.</p>
+                  <p className="text-white/70 text-sm leading-relaxed">Privacidad absoluta y procesos ágiles asegurando que su experiencia sea impecable.</p>
                 </div>
                 <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-[#e6a219]/50 transition-colors duration-300">
                   <Gem className="text-[#e6a219] w-10 h-10 mb-4" />
                   <h3 className="text-xl font-serif mb-2">Calidad</h3>
-                  <p className="text-[#1A1714] text-sm leading-relaxed">Una selección minuciosa de vehículos recientes, inspeccionados al más alto estándar.</p>
+                  <p className="text-white/70 text-sm leading-relaxed">Una selección minuciosa de vehículos recientes, inspeccionados al más alto estándar.</p>
                 </div>
                 <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-[#e6a219]/50 transition-colors duration-300 sm:col-span-2">
                   <Clock className="text-[#e6a219] w-10 h-10 mb-4" />
                   <h3 className="text-xl font-serif mb-2">Precisión</h3>
-                  <p className="text-[#1A1714] text-sm leading-relaxed">Tiempos exactos y atención personalizada en cada detalle. Entendemos el valor de su tiempo.</p>
+                  <p className="text-white/70 text-sm leading-relaxed">Tiempos exactos y atención personalizada en cada detalle. Entendemos el valor de su tiempo.</p>
                 </div>
               </div>
             </div>
