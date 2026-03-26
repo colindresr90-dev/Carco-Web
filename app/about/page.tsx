@@ -65,7 +65,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
               <div className="max-w-2xl">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#1A1714] mb-4">El Estándar CarCo</h2>
-                <p className="text-[#A68966] text-lg">Tres pilares que definen nuestro compromiso con tu experiencia.</p>
+                <p className="text-[#1A1714] text-lg">Tres pilares que definen nuestro compromiso con tu experiencia.</p>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -76,7 +76,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#1A1714] mb-2">Calidad sin Compromisos</h3>
-                  <p className="text-[#A68966] leading-relaxed">
+                  <p className="text-[#1A1714] leading-relaxed">
                     Cada vehículo pasa por inspecciones rigurosas antes de cada entrega. Mantenimiento preventivo constante y limpieza profesional garantizan una experiencia impecable.
                   </p>
                 </div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#1A1714] mb-2">Elegancia Funcional</h3>
-                  <p className="text-[#A68966] leading-relaxed">
+                  <p className="text-[#1A1714] leading-relaxed">
                     Seleccionamos modelos que combinan diseño moderno con eficiencia. Nuestra flota está pensada para adaptarse tanto a entornos urbanos como a rutas escénicas.
                   </p>
                 </div>
@@ -100,7 +100,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#1A1714] mb-2">Experiencia Personalizada</h3>
-                  <p className="text-[#A68966] leading-relaxed">
+                  <p className="text-[#1A1714] leading-relaxed">
                     Desde reservas digitales simples hasta atención directa cuando la necesites. Nuestro equipo está disponible para acompañarte antes, durante y después de tu alquiler.
                   </p>
                 </div>
@@ -115,7 +115,7 @@ export default function AboutPage() {
             <div className="mb-16 text-center max-w-3xl mx-auto">
               <span className="text-[#e6a219] font-bold tracking-widest uppercase text-xs mb-3 block">Estándares Globales, Compromiso Local</span>
               <h2 className="text-4xl md:text-5xl font-bold text-[#1A1714] mb-6">Excelencia con Identidad Local</h2>
-              <p className="text-[#A68966] text-lg">Nuestra operación combina procesos internacionales de calidad con un profundo conocimiento del territorio salvadoreño. Entendemos las rutas, los tiempos y las necesidades reales de quienes recorren el país.</p>
+              <p className="text-[#1A1714] text-lg">Nuestra operación combina procesos internacionales de calidad con un profundo conocimiento del territorio salvadoreño. Entendemos las rutas, los tiempos y las necesidades reales de quienes recorren el país.</p>
             </div>
             {/* Editorial Row 1 */}
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24 mb-24">
@@ -135,7 +135,7 @@ export default function AboutPage() {
                   <span className="font-bold text-sm tracking-widest uppercase">El Paisaje</span>
                 </div>
                 <h3 className="font-serif text-4xl text-[#1A1714]">Dominando Cada Ruta</h3>
-                <p className="text-[#A68966] text-lg leading-relaxed">
+                <p className="text-[#1A1714] text-lg leading-relaxed">
                   Desde las avenidas modernas de San Benito hasta los caminos hacia el Volcán de Santa Ana o las playas de La Libertad, nuestra flota está preparada para cada tipo de trayecto. Conocemos el terreno porque operamos en él todos los días.
                 </p>
               </div>
@@ -158,7 +158,7 @@ export default function AboutPage() {
                   <span className="font-bold text-sm tracking-widest uppercase">El Equipo</span>
                 </div>
                 <h3 className="font-serif text-4xl text-[#1A1714]">Atención que Marca la Diferencia</h3>
-                <p className="text-[#A68966] text-lg leading-relaxed">
+                <p className="text-[#1A1714] text-lg leading-relaxed">
                   Nuestro equipo entiende que el servicio no termina con la entrega de llaves. Ya sea coordinación especial, ajustes de último momento o asistencia inmediata, respondemos con profesionalismo y eficiencia.
                 </p>
               </div>
@@ -171,7 +171,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
             <Gem className="w-16 h-16 text-[#e6a219] opacity-50" />
             <h2 className="font-serif text-5xl md:text-6xl text-[#1A1714] leading-tight">¿Listo para Elevar tu Experiencia?</h2>
-            <p className="text-[#A68966] text-xl max-w-2xl">
+            <p className="text-[#1A1714] text-xl max-w-2xl">
               Descubre cómo CarCo redefine la movilidad en El Salvador. Reserva hoy y conduce con la tranquilidad que solo un servicio premium puede ofrecer.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-6 w-full justify-center">

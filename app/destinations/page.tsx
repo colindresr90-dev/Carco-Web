@@ -14,7 +14,7 @@ export default function DestinationsPage() {
         <section className="relative py-24 px-6 md:px-12 max-w-7xl mx-auto text-center border-b border-[#1C1C1C]/10">
           <span className="text-[#e6a219] font-bold tracking-[0.2em] uppercase text-xs mb-4 block">RUTAS SELECCIONADAS</span>
           <h1 className="text-5xl md:text-7xl font-serif italic mb-6 text-[#1C1C1C]">Explora Más Allá de lo Ordinario</h1>
-          <p className="text-[#1C1C1C]/70 max-w-3xl mx-auto text-lg font-light leading-relaxed">
+          <p className="text-[#1C1C1C] max-w-3xl mx-auto text-lg font-light leading-relaxed">
             Hemos seleccionado rutas icónicas de El Salvador para que cada trayecto se convierta en una experiencia.
             Cada destino está acompañado por el vehículo ideal para disfrutarlo al máximo.
           </p>
@@ -50,7 +50,7 @@ export default function DestinationsPage() {
               <div className="w-full md:w-1/2 space-y-10">
                 <div className="space-y-6">
                   <h3 className="text-4xl font-serif text-[#1C1C1C]">Descubre la sofisticación urbana</h3>
-                  <p className="text-[#1C1C1C]/80 leading-relaxed text-lg font-light">
+                  <p className="text-[#1C1C1C] leading-relaxed text-lg font-light">
                     Descubre la sofisticación de San Benito y Santa Elena. Restaurantes de autor, galerías contemporáneas y avenidas arboladas crean el escenario perfecto para un recorrido elegante y cómodo. Aquí, cada trayecto es parte del estilo de vida.
                   </p>
                 </div>
@@ -109,7 +109,7 @@ export default function DestinationsPage() {
               <div className="w-full md:w-1/2 space-y-10">
                 <div className="space-y-6">
                   <h3 className="text-4xl font-serif text-[#1C1C1C]">Donde el asfalto se encuentra con el océano</h3>
-                  <p className="text-[#1C1C1C]/80 leading-relaxed text-lg font-light">
+                  <p className="text-[#1C1C1C] leading-relaxed text-lg font-light">
                     Donde el asfalto se encuentra con el océano. La Ruta hacia La Libertad ofrece vistas abiertas del Pacífico, brisa marina y atardeceres memorables. Ideal para un viaje relajado con carácter.
                   </p>
                 </div>
@@ -167,7 +167,7 @@ export default function DestinationsPage() {
               <div className="w-full md:w-1/2 space-y-10">
                 <div className="space-y-6">
                   <h3 className="text-4xl font-serif text-[#1C1C1C]">Naturaleza imponente en las alturas</h3>
-                  <p className="text-[#1C1C1C]/80 leading-relaxed text-lg font-light">
+                  <p className="text-[#1C1C1C] leading-relaxed text-lg font-light">
                     Para quienes buscan altura y aventura. El Volcán de Santa Ana ofrece caminos que atraviesan naturaleza imponente. Una experiencia ideal para quienes desean explorar más allá del pavimento urbano.
                   </p>
                 </div>
@@ -207,7 +207,7 @@ export default function DestinationsPage() {
         <section className="bg-[#fcfaf8] py-24 px-6 md:px-12 text-center border-t border-[#1C1C1C]/5">
           <div className="max-w-3xl mx-auto space-y-8">
             <h2 className="text-4xl md:text-5xl font-serif text-[#1C1C1C]">Planifica Tu Ruta</h2>
-            <p className="text-[#1C1C1C]/70 text-lg font-light leading-relaxed">
+            <p className="text-[#1C1C1C] text-lg font-light leading-relaxed">
               Reserva el vehículo ideal y comienza tu experiencia en El Salvador con la seguridad y estilo que distingue a CarCo.
             </p>
             <Link

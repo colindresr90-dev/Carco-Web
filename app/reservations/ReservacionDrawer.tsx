@@ -113,7 +113,7 @@ export function ReservacionDrawer({ reservation, vehicle, onClose }: Props) {
                 {/* ── Header ── */}
                 <div className="flex items-center justify-between px-6 py-5 border-b border-white/[0.06] flex-shrink-0">
                     <div>
-                        <p className="text-[9px] uppercase tracking-[0.3em] text-[#A68966] font-semibold mb-0.5">Panel Privado</p>
+                        <p className="text-[9px] uppercase tracking-[0.3em] text-[#1A1714] font-semibold mb-0.5">Panel Privado</p>
                         <h2 className="font-serif italic text-[#ece8e1] text-base leading-tight">
                             Detalles de la Reserva
                         </h2>
@@ -150,7 +150,7 @@ export function ReservacionDrawer({ reservation, vehicle, onClose }: Props) {
                                         <p className="text-white font-serif italic text-lg leading-tight">
                                             {vehicle.brand} {vehicle.model}
                                         </p>
-                                        <p className="text-[#A68966] text-[10px] uppercase tracking-[0.15em] capitalize">
+                                        <p className="text-[#1A1714] text-[10px] uppercase tracking-[0.15em] capitalize">
                                             {vehicle.year} · {vehicle.category} · {vehicle.transmission}
                                         </p>
                                     </div>

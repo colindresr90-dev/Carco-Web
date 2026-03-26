@@ -146,7 +146,7 @@ export default function VehiclesTable({ initialData }: { initialData: VehicleRec
                                     </td>
                                     <td className="px-5 py-3">
                                         <p className="text-base font-semibold text-[#ece8e1] leading-none mb-1.5">{v.brand} {v.model}</p>
-                                        <p className="text-[11px] text-[#A68966] uppercase tracking-wider">{v.category} · {v.transmission}</p>
+                                        <p className="text-[11px] text-[#1A1714] uppercase tracking-wider">{v.category} · {v.transmission}</p>
                                     </td>
                                     <td className="px-5 py-3 text-sm text-[#d8cfc4]">{v.year}</td>
                                     <td className="px-5 py-3 text-sm font-medium text-[#c9b294]">

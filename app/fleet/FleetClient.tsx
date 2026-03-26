@@ -233,7 +233,7 @@ export default function FleetClient({ initialVehicles, renderTime }: { initialVe
                                 </div>
                                 <div className="space-y-2">
                                     <h3 className="text-2xl font-serif text-[#1A1714]">No hay vehículos disponibles</h3>
-                                    <p className="text-[#A68966] font-light">Prueba ajustando los filtros seleccionados.</p>
+                                    <p className="text-[#1A1714] font-light">Prueba ajustando los filtros seleccionados.</p>
                                 </div>
                                 <button
                                     onClick={clearFilters}

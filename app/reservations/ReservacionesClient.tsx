@@ -42,7 +42,7 @@ function EmptyState() {
                         d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
             </div>
-            <p className="text-[10px] uppercase tracking-[0.35em] text-[#A68966] font-bold mb-3">Sin resultados</p>
+            <p className="text-[10px] uppercase tracking-[0.35em] text-[#1A1714] font-bold mb-3">Sin resultados</p>
             <h3 className="font-serif italic text-[#1A1714] text-2xl mb-2">No tienes reservas activas</h3>
             <p className="text-sm text-[#7A6E65] mb-10 max-w-xs leading-relaxed">
                 Explora nuestra flota y comienza tu viaje con CarCo.
@@ -136,7 +136,7 @@ function ReservationCard({
                 {/* Vehicle name */}
                 <div className="mb-4">
                     <div className="flex justify-between items-start mb-1">
-                        <p className="text-[9px] uppercase tracking-[0.3em] text-[#A68966] font-bold">Vehículo</p>
+                        <p className="text-[9px] uppercase tracking-[0.3em] text-[#1A1714] font-bold">Vehículo</p>
                         {reservation.reservation_number && (
                             <p className="text-[9px] font-mono uppercase tracking-widest text-[#B3A999] bg-[#FAF8F5] px-2 py-0.5 rounded border border-[#EDE8E1]">
                                 {reservation.reservation_number}
@@ -205,7 +205,7 @@ export function ReservacionesClient({ reservations, vehiclesMap = [] }: { reserv
         <>
             {/* ── Page header ── */}
             <div className="mb-12">
-                <p className="text-[10px] uppercase tracking-[0.4em] text-[#A68966] font-bold mb-3">
+                <p className="text-[10px] uppercase tracking-[0.4em] text-[#1A1714] font-bold mb-3">
                     Panel Privado
                 </p>
                 <h1 className="font-serif italic text-[#1A1714] text-4xl md:text-5xl leading-tight mb-4">

@@ -83,7 +83,7 @@ export default async function Home() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-6">
             <div>
               <h2 className="text-3xl md:text-5xl text-[#1A1714] mb-4 font-serif">Nuestra Flota</h2>
-              <p className="text-[#A68966] max-w-md font-light">Una colección curada de vehículos que combinan elegancia, eficiencia y presencia. Cada modelo ha sido seleccionado para adaptarse al ritmo de San Salvador, a la serenidad de la costa y a la aventura de nuestros paisajes naturales.</p>
+              <p className="text-[#1A1714] max-w-md font-light">Una colección curada de vehículos que combinan elegancia, eficiencia y presencia. Cada modelo ha sido seleccionado para adaptarse al ritmo de San Salvador, a la serenidad de la costa y a la aventura de nuestros paisajes naturales.</p>
             </div>
             <Link href="/fleet" className="group flex items-center gap-2 text-[#1A1714] font-medium border-b border-[#A68966]/50 pb-1 hover:border-[#e6a219] transition-colors">
               Ver Flota Completa
@@ -124,7 +124,7 @@ export default async function Home() {
                       <h3 className="text-2xl text-[#1A1714] font-serif">{car.brand} {car.model}</h3>
                       <span className="text-[#e6a219] font-bold text-lg">${car.price_per_day}<span className="text-sm font-normal text-[#A68966]/80">/día</span></span>
                     </div>
-                    <p className="text-[#A68966] text-sm font-medium tracking-wide uppercase">{car.category} • {car.transmission}</p>
+                    <p className="text-[#1A1714] text-sm font-medium tracking-wide uppercase">{car.category} • {car.transmission}</p>
                     
                     {/* Mobile Only Buttons */}
                     <div className="flex gap-3 mt-3 md:hidden">
@@ -166,7 +166,7 @@ export default async function Home() {
                 <h2 className="text-4xl md:text-6xl font-light leading-tight">
                   Una Experiencia <br /> <span className="font-serif italic text-[#e6a219]">Pensada en el Detalle</span>
                 </h2>
-                <p className="text-lg text-[#A68966]/80 font-light max-w-md leading-relaxed">
+                <p className="text-lg text-[#1A1714] font-light max-w-md leading-relaxed">
                   En CarCo entendemos que la movilidad es una extensión del estilo personal. Por eso ofrecemos procesos ágiles, atención precisa y vehículos en condiciones impecables. Cada reserva es el inicio de una experiencia diseñada para quienes valoran la excelencia.
                 </p>
                 <Link href="/about" className="inline-flex items-center gap-3 text-white border-b border-[#e6a219] pb-1 hover:text-[#e6a219] transition-colors uppercase tracking-widest text-sm font-bold mt-4">
@@ -179,17 +179,17 @@ export default async function Home() {
                 <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-[#e6a219]/50 transition-colors duration-300">
                   <Shield className="text-[#e6a219] w-10 h-10 mb-4" />
                   <h3 className="text-xl font-serif mb-2">Discreción</h3>
-                  <p className="text-[#A68966]/70 text-sm leading-relaxed">Privacidad absoluta y procesos ágiles asegurando que su experiencia sea impecable.</p>
+                  <p className="text-[#1A1714] text-sm leading-relaxed">Privacidad absoluta y procesos ágiles asegurando que su experiencia sea impecable.</p>
                 </div>
                 <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-[#e6a219]/50 transition-colors duration-300">
                   <Gem className="text-[#e6a219] w-10 h-10 mb-4" />
                   <h3 className="text-xl font-serif mb-2">Calidad</h3>
-                  <p className="text-[#A68966]/70 text-sm leading-relaxed">Una selección minuciosa de vehículos recientes, inspeccionados al más alto estándar.</p>
+                  <p className="text-[#1A1714] text-sm leading-relaxed">Una selección minuciosa de vehículos recientes, inspeccionados al más alto estándar.</p>
                 </div>
                 <div className="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-[#e6a219]/50 transition-colors duration-300 sm:col-span-2">
                   <Clock className="text-[#e6a219] w-10 h-10 mb-4" />
                   <h3 className="text-xl font-serif mb-2">Precisión</h3>
-                  <p className="text-[#A68966]/70 text-sm leading-relaxed">Tiempos exactos y atención personalizada en cada detalle. Entendemos el valor de su tiempo.</p>
+                  <p className="text-[#1A1714] text-sm leading-relaxed">Tiempos exactos y atención personalizada en cada detalle. Entendemos el valor de su tiempo.</p>
                 </div>
               </div>
             </div>
@@ -199,7 +199,7 @@ export default async function Home() {
         {/* Destinations Header Add-On */}
         <section className="bg-[#1A1714] text-center pt-20 md:pt-24 pb-12 md:pb-16 px-4 sm:px-6 relative">
           <h2 className="text-3xl sm:text-4xl md:text-5xl text-white font-serif mb-4 md:mb-6 leading-tight">Destinos que Definen el Viaje</h2>
-          <p className="text-[#A68966] text-lg max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-[#1A1714] text-lg max-w-2xl mx-auto font-light leading-relaxed">
             El Salvador es contraste y carácter. Ciudad y océano. Modernidad y naturaleza. Nuestra experiencia está diseñada para acompañarte en cada escenario.
           </p>
         </section>

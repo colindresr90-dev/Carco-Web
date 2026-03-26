@@ -40,7 +40,7 @@ export default function ReserveSuccessPage() {
 
                     <div className="w-24 h-[1px] bg-[#e6a219]/50 mx-auto mb-8"></div>
 
-                    <p className="text-[#A68966] text-lg md:text-xl font-light max-w-2xl mx-auto mb-4">
+                    <p className="text-[#1A1714] text-lg md:text-xl font-light max-w-2xl mx-auto mb-4">
                         El pago ha sido procesado con éxito. Tu reserva ha sido guardada y tu experiencia CarCo comienza ahora.
                     </p>
 

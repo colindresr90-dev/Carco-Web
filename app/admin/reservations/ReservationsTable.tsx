@@ -353,7 +353,7 @@ export function ReservationsTable({ initialData, vehiclesMap }: { initialData: R
                         Showing {filtered.length} of {reservations.length} reservations
                     </p>
                     {selectedReservation && (
-                        <p className="text-[10px] text-[#A68966] uppercase tracking-widest">
+                        <p className="text-[10px] text-[#1A1714] uppercase tracking-widest">
                             Row selected · click to view details
                         </p>
                     )}

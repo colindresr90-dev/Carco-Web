@@ -26,7 +26,7 @@ export default async function ReservePage({ searchParams }: { searchParams: Prom
     return (
       <div className="min-h-screen bg-[#fcfaf8] flex flex-col items-center justify-center text-[#1A1714]">
         <h1 className="text-2xl font-bold mb-4">Error al cargar el vehículo</h1>
-        <p className="text-[#A68966]">{error.message}</p>
+        <p className="text-[#1A1714]">{error.message}</p>
         <p className="text-sm text-gray-400 mt-4">ID: {vehicleId}</p>
       </div>
     );
@@ -36,7 +36,7 @@ export default async function ReservePage({ searchParams }: { searchParams: Prom
     return (
       <div className="min-h-screen bg-[#fcfaf8] flex flex-col items-center justify-center text-[#1A1714]">
         <h1 className="text-2xl font-bold mb-4">Vehículo no encontrado</h1>
-        <p className="text-[#A68966]">No se pudo encontrar el vehículo con ID: {vehicleId}</p>
+        <p className="text-[#1A1714]">No se pudo encontrar el vehículo con ID: {vehicleId}</p>
       </div>
     );
   }
@@ -93,7 +93,7 @@ export default async function ReservePage({ searchParams }: { searchParams: Prom
               <div className="p-8 space-y-6">
                 <div>
                   <h3 className="text-2xl font-serif text-[#1A1714]">{vehicle.brand} {vehicle.model}</h3>
-                  <p className="text-[#A68966] text-sm capitalize">{vehicle.category} · {vehicle.transmission}</p>
+                  <p className="text-[#1A1714] text-sm capitalize">{vehicle.category} · {vehicle.transmission}</p>
                 </div>
                 <div className="space-y-4 border-t border-[#e7dfd0] pt-6">
                   <div className="flex justify-between text-sm">
@@ -116,7 +116,7 @@ export default async function ReservePage({ searchParams }: { searchParams: Prom
                 {vehicle.security_deposit && (
                   <div className="bg-[#e6a219]/10 p-4 rounded-lg flex gap-3 items-start">
                     <Info className="w-5 h-5 text-[#e6a219] flex-shrink-0 mt-0.5" />
-                    <p className="text-xs text-[#A68966] leading-relaxed">
+                    <p className="text-xs text-[#1A1714] leading-relaxed">
                       Se retendrá un depósito de seguridad de ${vehicle.security_deposit} en su tarjeta al recoger el vehículo y se liberará al devolverlo.
                     </p>
                   </div>

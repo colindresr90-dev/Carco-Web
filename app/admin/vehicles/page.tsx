@@ -59,7 +59,7 @@ export default async function AdminVehiclesPage() {
             <main className="px-8 md:px-12 py-10 max-w-[1500px] mx-auto">
                 <div className="mb-5 flex items-end justify-between">
                     <div>
-                        <p className="text-[9px] uppercase tracking-[0.3em] text-[#A68966] mb-1 font-medium">Live Data</p>
+                        <p className="text-[9px] uppercase tracking-[0.3em] text-[#1A1714] mb-1 font-medium">Live Data</p>
                         <h2 className="text-xl font-serif italic text-[#ece8e1]">Fleet Registry</h2>
                     </div>
                 </div>

@@ -313,7 +313,7 @@ export function ReservationDrawer({ reservation, vehicle, onClose, onStatusChang
                 {/* ── Header ── */}
                 <div className="flex items-center justify-between px-6 py-5 border-b border-white/[0.06] flex-shrink-0">
                     <div>
-                        <p className="text-[9px] uppercase tracking-[0.3em] text-[#A68966] font-semibold mb-0.5">Detail View</p>
+                        <p className="text-[9px] uppercase tracking-[0.3em] text-[#1A1714] font-semibold mb-0.5">Detail View</p>
                         <h2 className="font-serif italic text-[#ece8e1] text-base leading-tight">
                             Reservation Record
                         </h2>
@@ -350,7 +350,7 @@ export function ReservationDrawer({ reservation, vehicle, onClose, onStatusChang
                                         <p className="text-white font-serif italic text-lg leading-tight">
                                             {vehicle.brand} {vehicle.model}
                                         </p>
-                                        <p className="text-[#A68966] text-[10px] uppercase tracking-[0.15em] capitalize">
+                                        <p className="text-[#1A1714] text-[10px] uppercase tracking-[0.15em] capitalize">
                                             {vehicle.year} · {vehicle.category} · {vehicle.transmission}
                                         </p>
                                     </div>
@@ -499,7 +499,7 @@ export function ReservationDrawer({ reservation, vehicle, onClose, onStatusChang
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-serif text-[#fcfaf8] tracking-tight">Cancelar Reserva</h3>
-                                    <p className="text-[11px] text-[#A68966] mt-0.5 font-mono uppercase tracking-widest">{res.reservation_number || res.id.substring(0, 8)}</p>
+                                    <p className="text-[11px] text-[#1A1714] mt-0.5 font-mono uppercase tracking-widest">{res.reservation_number || res.id.substring(0, 8)}</p>
                                 </div>
                             </div>
                             <button aria-label="Cerrar modal" onClick={() => setIsCancelModalOpen(false)} className="text-[#8c8c8c] hover:text-[#fcfaf8] hover:bg-white/5 p-1.5 rounded-lg transition-colors">

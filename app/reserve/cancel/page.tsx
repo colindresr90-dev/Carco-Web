@@ -32,7 +32,7 @@ export default function ReserveCancelPage() {
 
                     <div className="w-16 h-[1px] bg-white/20 mx-auto mb-8"></div>
 
-                    <p className="text-[#A68966] text-lg font-light max-w-xl mx-auto mb-12">
+                    <p className="text-[#1A1714] text-lg font-light max-w-xl mx-auto mb-12">
                         Puedes intentar nuevamente cuando lo desees.
                     </p>
 

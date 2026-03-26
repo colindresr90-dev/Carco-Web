@@ -104,7 +104,7 @@ export function HistoryDrawer({ reservation, onClose }: { reservation: any; onCl
                 {/* Header */}
                 <div className="flex items-start justify-between p-6 border-b border-white/[0.08] bg-[#141414]">
                     <div>
-                        <p className="text-[9px] uppercase tracking-[0.3em] text-[#A68966] font-semibold mb-1">
+                        <p className="text-[9px] uppercase tracking-[0.3em] text-[#1A1714] font-semibold mb-1">
                             Audit Trail
                         </p>
                         <h2 className="text-lg font-serif italic text-[#ece8e1]">
